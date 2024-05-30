@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equality in Every Shade</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body id="index">
+    <header>
+        <img src="images/logo.png" alt="" id="logo">
+        <div id="headerText">
+            <h1>EQUALITY IN EVERY SHADE</h1>
+            <p>Every Shade Counts</p>
+        </div>
+    </header>
+    <main>
+        <section id="signupContainer">
+            <form id="signupForm" onsubmit="profile(event)">
+                <fieldset form="signupForm" id="signupfield">
+                    <h3>Sign up to help in the battle against racism</h3>
+                    <p id="fillOutFormBelow">Fill out the form below to signup</p>
+                    <hr id="line">
+                    <div id="nameContainer">
+                        <div id="firstNameContainer">
+                            <label for="firstName">First Name:<span id="firstNameError" class="error">*</span></label>
+                            <input type="text" id="firstName" name="firstName" placeholder="First Name"><br><br>
+                        </div>
+                        <div id="lastNameContainer">
+                            <label for="lastName">Last Name:<span id="lastNameError" class="error">*</span></label>
+                            <input type="text" id="lastName" name="lastName"  placeholder="Last Name"><br><br>
+                        </div>
+                    </div>
+                    <label for="email">Email Address:<span id="emailError" class="error">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Email Address"><br><br>
+
+                    <label for="password">Password:<span id="passwordError" class="error">*</span></label>
+                    <input type="password" id="password" name="password" placeholder="Password"><br><br>
+
+                    <label for="contactNumber">Contact Number:</label>
+                    <input type="text" id="contactNumber" name="contactNumber" placeholder="Contact Number"><br><br>
+
+                    <div id="someContainer">
+                        <div id="genderContainer">
+                            <label>Gender:<span id="genderError" class="error">*</span></label><br>
+                            <input type="radio" id="male" name="gender" value="Male">
+                            <label for="male">Male</label><br>
+                            <input type="radio" id="female" name="gender" value="Female">
+                            <label for="female">Female</label><br>
+                            <input type="radio" id="preferNotToSay" name="gender" value="Prefer not to say">
+                            <label for="preferNotToSay">Prefer not to say</label>
+                        </div><br>
+                        <div id="supportReasonContainer"> 
+                            <label for="supportReason">Why I support <br>this campaign:<span id="supportReasonError" class="error">*</span></label>
+                            <textarea id="supportReason" name="supportReason" placeholder="I support this campaign because..."></textarea> <br><br>
+                        </div>
+                    </div>
+                    <button type="submit">Register</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

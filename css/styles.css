@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    text-align: center;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo{
+    width:auto;
+    height:6vw;
+}
+
+header{
+    position:fixed;
+    top:4vw;
+    right:33vw;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header p{
+    font-size: 2vw;
+    font-weight:100;
+    font-style:italic;
+}
+
+#headerText{
+    background-color:white;
+    padding:1vw;
+    border-radius:8px;
+    border: 1px solid black;
+    
+}
+
+h1 {
+    font-size: 2.5vw;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+main p {
+    font-size: 0.8vw;
+    font-style:italic;
+}
+
+main {
+    background-color: #ffffff;
+    border-radius: 8px;
+    max-width: 40vw;
+    position:fixed;
+    bottom:12.5vw;
+    right:40vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+form {
+    text-align: left;
+}
+
+#genderContainer label {
+    display: inline;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+.error{
+    color:red;
+    font-weight:light;
+}
+
+textarea {
+    resize:none;
+    height:2vw;
+    width:9.75vw;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    margin-left:5.5vw;
+    width:9vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #333333;
+}
+
+#nameContainer, #someContainer{
+    display:flex;
+}
+
+#signupField{
+    margin:2vw;
+}
+
+.error{
+    position:fixed;
+}
+
+#supportReasonContainer{
+    margin-left:2vw;
+}
+
+#lastNameContainer{
+    margin-left:1vw;
+}
+
+#email, #password, #contactNumber{
+    width:19vw;
+}
+
+#signupfield{
+    padding:1vw;
+    border-radius: 10px;
+}
+
+#line{
+    margin-top:0.5vw;
+    margin-bottom:0.5vw;
+}
+
+#dashboard {
+    background-color: #ffffff;
+    border-radius: 8px;
+    height: auto;
+    width: 30vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 1px solid black;
+    padding: 1vw;
+    position:fixed;
+    top:20vw;
+    right:35vw;
+}
+
+#dashboard p {
+    white-space: normal;
+    word-wrap: break-word;
+    margin: 0.5vw;
+}

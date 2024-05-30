@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Equality in Every Shade</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="profile">
+    <header>
+        <img src="images/logo.png" alt="" id="logo">
+        <div id="headerText">
+            <h1>EQUALITY IN EVERY SHADE</h1>
+            <p>Every Shade Counts</p>
+        </div>
+    </header>
+    <section id="dashboard">
+        <h2>Profile Information</h2>
+        <p><strong>First Name:</strong> <span id="firstName"></span></p>
+        <p><strong>Last Name:</strong> <span id="lastName"></span></p>
+        <p><strong>Email Address:</strong> <span id="email"></span></p>
+        <p><strong>Gender:</strong> <span id="gender"></span></p>
+        <p><strong>Why I support this campaign:</strong> <span id="supportReason"></span></p>
+    </section>
+    <script>
+        document.getElementById('firstName').textContent = localStorage.getItem('firstName');
+        document.getElementById('lastName').textContent = localStorage.getItem('lastName');
+        document.getElementById('email').textContent = localStorage.getItem('email');
+        document.getElementById('gender').textContent = localStorage.getItem('gender');
+        document.getElementById('supportReason').textContent = localStorage.getItem('supportReason');
+    </script>
+</body>
+</html>
